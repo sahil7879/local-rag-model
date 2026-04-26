@@ -1,0 +1,521 @@
+
+--- PAGE 1 ---
+TechLanders
+DevOps 
+(Principles & Tools)
+
+
+--- PAGE 2 ---
+DevOps Foundation
+2
+Introduction                    
+Name
+Total Experience 
+Background – Development / Infrastructure / Database / Network
+Experience on Containers
+Your expectations from this training
+
+
+--- PAGE 3 ---
+DevOps Foundation
+3
+DevOps
+What is DevOps?
+
+
+--- PAGE 4 ---
+TechLanders
+SDLC Model
+4
+•
+A systems development life cycle is composed of several clearly defined and distinct work 
+phases which are used by systems engineers and systems developers to plan for, design, build, 
+test, and deliver information systems
+Require-
+ment 
+Analysi
+s
+Design
+Impleme
+ntation
+Testing
+Evaluatio
+n
+SDLC – Life 
+Cycle
+SDLC Model
+
+
+--- PAGE 5 ---
+TechLanders
+Waterfall Development Model
+5
+- long release cycle
+- A lot of WIP
+- Functional silos
+- Incredibly rigid for developing
+1.
+Determine the Requirements
+2.
+Complete the design
+3.
+Do the coding and testing 
+(unit tests)
+4.
+Perform other tests 
+(functional tests, non-
+functional tests, Performance 
+testing, bug fixes etc.)
+5.
+At last deploy and maintain
+Waterfall Model
+
+
+--- PAGE 6 ---
+TechLanders
+Agile Development Model
+6
+- Shorter release cycle
+- Small batch sizes (MVP)
+- Cross-functional teams
+- Incredibly agile
+Agile
+
+
+[OCR IMAGE TEXT]
+Agile Methodology
+
+Liaesioh
+
+
+--- PAGE 7 ---
+TechLanders
+Lean Development Model
+7
+- Suddenly ops was the bottleneck (more release less people), again WIP is more!
+Lean Development
+
+
+[OCR IMAGE TEXT]
+Lean Development (LD)
+
+The UX Process
+
+A
+
+(— Boss Customers \
+
+Validate Test Learn from
+Concept Prototype Internally Externally user behavior Iterate
+
+Usability
+testing
+
+
+
+[OCR IMAGE TEXT]
+Not like this...
+
+1.01 Ge SS
+
+..instead like this!
+
+- - -
+
+= >» & ah =
+
+
+--- PAGE 8 ---
+TechLanders
+Challenges
+8
+Some of the challenges with 
+the traditional teams of 
+Development and Operations 
+are:
+Challenges
+
+
+[OCR IMAGE TEXT]
+or ==
+=
+(aa
+LI
+=
+(==
+ox
+(_) disint
+———
+
+Challenges
+
+rated Proc
+
+
+
+--- PAGE 9 ---
+TechLanders
+9
+▰
+Development Team: 
+-
+Monday Morning, the writing of code done, unit tests completed, code delivered to the 
+Integration teams to get the code included in CI builds.
+-
+To get the services tested, a ticket is opened for QA teams
+▰
+Build/Release/Testing/Integration Team:
+-
+Tuesday Morning, ticket accepted, a tester put an email to the developer asking deployment 
+instructions. There is not automated deployments, developer updated to the tester, lets come 
+online and we will deploy the services to the QA environment together.
+-
+Call started, developer identified the “test environment” is not compatible.
+-
+Tuesday afternoon, a ticket raised in Ops Team with new specifications.
+▰
+Ops Team:
+-
+Wednesday morning, ticket accepted, specifications checked , a new port open request was 
+identified. 
+-
+Ticket raised for Security team, ticket accepted, change approved, port opened, email received 
+by the Ops team the work is done.
+A Typical Case Study
+
+
+--- PAGE 10 ---
+TechLanders
+A Typical Case Study
+10
+▰
+Ops Team: 
+-
+Identified the provisioning requirements again and started work on building the 
+environment.
+▰
+Build/Release/Testing/Integration Team:
+-
+Thursday Morning, updates received - the environment is ready. Developer and Tester 
+again on call to deploy new services. Services deployed; tester is running test scripts. 
+Next phase is to run regression test cases. Again a new ticket is raised for new test data 
+with production teams and day ends.
+▰
+Ops Team:
+-
+Its Friday and the work is not on full swing, ticket accepted but not worked as 
+production team has to complete rest of the works. Somehow the test data is gathered 
+by Friday Evening.
+▰
+Build/Release/Testing/Integration Team: 
+-
+Monday morning, tester gets the data, regression tests run, a defect found, and ticket 
+returned to the development team.
+A Typical Case Study
+
+
+--- PAGE 11 ---
+DevOps Foundation
+Software Development
+Infrastructure, Operations 
+and Support
+Build & Release, Testing 
+Teams
+DevOps
+-
+Break the Silos
+-
+Communication (not only with 
+emails)
+-
+Collaboration
+-
+Trust
+-
+Involvement in the early 
+development stages
+-
+Automation is the key
+-
+Continuous Integration
+-
+Continuous Deployments in 
+the lower environments
+-
+Fail fast and fail often
+DevOps
+
+
+--- PAGE 12 ---
+DevOps Foundation
+Development
+QA Testing
+Implementation & Release
+Operations & Monitoring
+- name: 
+Playbook 
+for 
+webserver 
+setup
+  hosts: 
+all
+  tasks:
+    - name: 
+package 
+installatio
+n
+      yum: 
+name=yum 
+state=prese
+nt
+  ....
+  .... 
+  ....
+  ....
+- name: 
+Playbook 
+for 
+webserver 
+setup
+  t
+  ....
+  .... 
+  ....
+  ....
+APP
+APP
+APP
+Waiting
+Waiting
+Waiting
+Waiting
+APP
+
+
+[OCR IMAGE TEXT]
+Continuous Delivery
+
+
+[OCR IMAGE TEXT]
+Continuous Deployment
+
+
+[OCR IMAGE TEXT]
+Continuous Monitoring
+
+
+[OCR IMAGE TEXT]
+Continuous Feedback
+
+
+[OCR IMAGE TEXT]
+Continuous Improvement
+
+
+[OCR IMAGE TEXT]
+Continuous Planning
+
+
+[OCR IMAGE TEXT]
+DevOps In Production
+
+
+[OCR IMAGE TEXT]
+Dev
+
+
+[OCR IMAGE TEXT]
+Ops
+
+
+[OCR IMAGE TEXT]
+Development
+
+
+[OCR IMAGE TEXT]
+Operations
+
+
+[OCR IMAGE TEXT]
+>
+ae]
+
+Ler]
+
+
+
+[OCR IMAGE TEXT]
+Continuous Integration
+
+
+--- PAGE 13 ---
+TechLanders
+DevOps  Toolsets
+Collaborate
+Build
+Test
+Deploy
+Run
+Application 
+Lifecycle Mgmt.
+Communication 
+& ChatOps
+Knowledge 
+Sharing
+SCM/VCS
+CI
+Build
+Database 
+Management
+Testing
+Deployment
+Config Mgmt./Provisioning
+Artefact Management
+Cloud / IaaS / PaaS
+Orchestration & Scheduling
+Monitoring / Logging
+
+
+[OCR IMAGE TEXT]
+a
+
+
+[OCR IMAGE TEXT]
+@bHipChat
+
+
+[OCR IMAGE TEXT]
+x Confluence
+
+
+[OCR IMAGE TEXT]
+(H OPENAPI
+
+INITIATIVE
+
+
+[OCR IMAGE TEXT]
+aan
+
+
+[OCR IMAGE TEXT]
+‘O
+
+circleci
+
+
+[OCR IMAGE TEXT]
+©
+
+OD
+OO
+
+GitHub Actions
+
+
+[OCR IMAGE TEXT]
+itl DECI
+
+
+[OCR IMAGE TEXT]
+*Sradle
+
+
+[OCR IMAGE TEXT]
+Liqui
+
+
+[OCR IMAGE TEXT]
+Xa maestro
+
+
+[OCR IMAGE TEXT]
+Spinnaker
+
+
+[OCR IMAGE TEXT]
+urban{code}
+
+
+[OCR IMAGE TEXT]
+RK Octopus Deploy
+
+
+[OCR IMAGE TEXT]
+RUN
+DECK
+
+
+[OCR IMAGE TEXT]
+Gy SALTSTACK
+
+
+[OCR IMAGE TEXT]
+@
+
+
+[OCR IMAGE TEXT]
+Z DUppet
+
+
+[OCR IMAGE TEXT]
+eH,
+
+Frog
+
+
+[OCR IMAGE TEXT]
+ar
+
+
+[OCR IMAGE TEXT]
+&
+
+Google Cloud
+
+
+[OCR IMAGE TEXT]
+o)
+
+DigitalOcean
+
+
+[OCR IMAGE TEXT]
+Alibaba Grou
+
+
+[OCR IMAGE TEXT]
+wy
+
+oy
+
+&
+5)
+
+
+[OCR IMAGE TEXT]
+RANCHER
+
+
+[OCR IMAGE TEXT]
+ZABBIX
+
+
+[OCR IMAGE TEXT]
+10° “
+
+
+
+[OCR IMAGE TEXT]
+Q
+
+
+[OCR IMAGE TEXT]
+splrik>
+
+
+[OCR IMAGE TEXT]
+Kia
+
+DATADOG
+

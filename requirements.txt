@@ -1,0 +1,13 @@
+streamlit 
+ollama 
+langchain 
+langchain-chroma 
+langchain-ollama 
+langchain-text-splitters 
+chromadb 
+pymupdf 
+pytesseract 
+pillow 
+python-dotenv 
+pypdf 
+python-docx
