@@ -9,15 +9,16 @@ from PIL import Image
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
 from langchain_text_splitters import RecursiveCharacterTextSplitter
-
+from dotenv import load_dotenv 
+load_dotenv()
 # --------------------------------------------------
 # CONFIG
 # --------------------------------------------------
 st.set_page_config(page_title="Local RAG Assistant", layout="wide")
 
-OLLAMA_HOST = "http://172.23.32.1:11434"
-DB_PATH = "chroma_db"
-UPLOAD_DIR = "uploads"
+OLLAMA_HOST = os.getenv("OLLAMA_HOST")
+DB_PATH = os.getenv("DB_PATH")
+UPLOAD_DIR = os.getenv("UPLOAD_DIR")
 
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 

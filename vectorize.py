@@ -1,7 +1,8 @@
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_chroma import Chroma
 from langchain_ollama import OllamaEmbeddings
-
+from dotenv import load_dotenv 
+load_dotenv()
 text = open("content.txt", encoding="utf-8").read()
 
 splitter = RecursiveCharacterTextSplitter(
@@ -16,13 +17,13 @@ print("Chunks:", len(chunks))
 
 embeddings = OllamaEmbeddings(
     model="nomic-embed-text",
-    base_url="http://172.23.32.1:11434"
+    base_url=os.getenv("OLLAMA_HOST")
 )
 
 db = Chroma.from_texts(
     texts=chunks,
     embedding=embeddings,
-    persist_directory="chroma_db"
+    persist_directory=os.getenv("DB_PATH")
 )
 
 print("✅ Vector DB Ready")
